@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Santiago Revelo Campos">
+    <meta name="description" content="jemplo de maquetación CSS Grid">
+    <title>CSS Grid</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/gamesheetstyle.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, .2);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Insert your HTML here -->
+    <div class="tablewrapper">
+
+        <div id="gameSheet">
+            <div id="nameAndStimate" class="block">
+                <div id="name" class="column">
+                    <h4 class="item heading">
+                        Nombre del Juego
+                    </h4>
+                    <p class="item field">
+                        Match and Scratch
+                    </p>
+                </div>
+                <div id="estimation" class="column">
+                    <h4 class="item heading">
+                        Tiempo desarrollo
+                    </h4>
+                    <p class="item field time">
+                        90 días
+                    </p>
+                </div>
+            </div>
+            <div id="gameType" class="block">
+                <div id="genre" class="column">
+                    <h4 class="item heading">
+                        Género
+                    </h4>
+                    <p class="item field">
+                        Puzzle
+                    </p>
+                    <p class="item field">
+                        ...
+                    </p>
+                    <p class="item field">
+                        ...
+                    </p>
+                </div>
+                <div id="subject" class="column">
+                    <h4 class="item heading">
+                        Temática
+                    </h4>
+                    <p class="item field">
+                        Match 3
+                    </p>
+                    <p class="item field">
+                        ...
+                    </p>
+                    <p class="item field">
+                        ...
+                    </p>
+                </div>
+            </div>
+            <div id="gameplay" class="block">
+                <div id="difficulty" class="column">
+                    <h4 class="item heading">
+                        Dificultad
+                    </h4>
+                    <p class="item field">
+                        Incremental
+                    </p>
+                </div>
+                <div id="content" class="column">
+                    <h4 class="item heading">
+                        Contenido
+                    </h4>
+                    <p class="item field">
+                        ...
+                    </p>
+                </div>
+            </div>
+            <div id="graphics" class="block">
+                <div id="graphics-type" class="column">
+                    <h4 class="item heading">
+                        Gráficos
+                    </h4>
+                    <p class="item field">
+                        2D
+                    </p>
+                </div>
+                <div id="artistic-style" class="column">
+                    <h4 class="item heading">
+                        Estilo
+                    </h4>
+                    <p class="item field">
+                        Minimalista
+                    </p>
+                </div>
+            </div>
+            <div id="sfx" class="block">
+                <div id="music" class="column">
+                    <h4 class="item heading">
+                        Música
+                    </h4>
+                    <p class="item field">
+                        Hip Hop
+                    </p>
+                </div>
+                <div id="sound" class="column">
+                    <h4 class="item heading">
+                        Sonidos
+                    </h4>
+                    <p class="item field">
+                        scratches
+                    </p>
+                </div>
+            </div>
+            <div id="story" class="block">
+                <div id="length" class="column">
+                    <h4 class="item heading">
+                        Historia
+                    </h4>
+                    <p class="item field">
+                        ...
+                    </p>
+                </div>
+                <div id="final" class="column">
+                    <h4 class="item heading">
+                        Final
+                    </h4>
+                    <p class="item field">
+                        sin final
+                    </p>
+                </div>
+            </div>
+            
+            <div id="extras" class="block">
+                <div id="complements" class="column">
+                    <h4 class="item heading">
+                        Complementos
+                    </h4>
+                    <div class="fields">
+                        <p class="item field">
+                            ...
+                        </p>
+                        <p class="item field">
+                            ...
+                        </p>
+                        <p class="item field">
+                            ...
+                        </p>
+                        <p class="item field">
+                            ...
+                        </p>
+                        <p class="item field">
+                            ...
+                        </p>
+                        <p class="item field">
+                            ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-XXXXXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

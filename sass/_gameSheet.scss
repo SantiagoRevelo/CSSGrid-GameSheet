@@ -1,0 +1,140 @@
+#gameSheet {
+    @include grid(1fr 1fr, 1fr, 1px);
+    @include border(4px $outterBorder_color solid, 5px);
+    * {
+        box-sizing: border-box;
+    }
+
+    background-color: $tableBg_color;
+
+    .block {
+        @include border(2px $outterBorder_color dashed);
+        @include flex-container-row;
+        background-color: $bg_color;
+    }
+
+    #nameAndStimate {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    #gameType {
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+
+    #extras {
+        grid-column: 1;
+        grid-row: 4 / 6;
+        .fields {
+            @include flex-container-column(wrap);
+            max-height: 145px;
+            align-items: center;
+            .field {
+                width: calc(50% - 10px);
+                margin: 3px 0 5px 0;
+            }
+        }
+    }
+
+    #gameplay {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #graphics {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #sfx {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #story {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .item {
+        font-family: 'Press Start 2P';
+        margin: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+    }
+
+    .heading {
+        color: $header_color;
+    }
+
+    .field {
+        @include border(none, 10px);
+        background-color: $field_color;
+        color: $text_color;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #gameSheet {
+        @include grid(1fr, 1fr);
+
+        #nameAndStimate {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #gameType {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #gameplay {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        #graphics {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        #sfx {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        #story {
+            grid-column: 1;
+            grid-row: 6;
+        }
+        #extras {
+            grid-column: 1;
+            grid-row: 7;
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #gameSheet {
+        .block {
+            background-color: $bg_color;
+        }
+        #extras {
+            .fields {                
+                max-height: 100%;
+                .field {
+                    width: calc(100% - 10px);
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
