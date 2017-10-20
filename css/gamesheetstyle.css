@@ -67,10 +67,19 @@
   #gameSheet .heading {
     color: #050000; }
   #gameSheet .field {
-    border: none;
-    border-radius: 10px;
+    border: 2px #efee03 dashed;
+    border-radius: 8px;
     background-color: #ffffff;
     color: #101010; }
+    #gameSheet .field.time:before {
+      content: "";
+      display: inline-block;
+      top: 10px;
+      background: url("../img/clock.png") no-repeat;
+      width: 16px;
+      height: 14px;
+      position: relative;
+      top: -1px; }
 
 @media screen and (max-width: 1200px) {
   #gameSheet {
@@ -100,8 +109,6 @@
       grid-column: 1;
       grid-row: 7; } }
 @media only screen and (max-width: 820px) {
-  #gameSheet .block {
-    background-color: #efee03; }
   #gameSheet #extras .fields {
     max-height: 100%; }
     #gameSheet #extras .fields .field {
